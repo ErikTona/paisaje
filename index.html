@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paisaje</title>
+</head>
+<body>
+    <canvas id="miCanvas" width="800" height="600" style="border:1px solid #000000;"></canvas>
+    <script>
+        var canvas = document.getElementById("miCanvas");
+        var ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "lightblue";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = "white";
+        ctx.beginPath();
+        ctx.arc(600, 100, 40, 0, Math.PI * 2);  
+        ctx.arc(650, 100, 50, 0, Math.PI * 2);  
+        ctx.arc(700, 100, 40, 0, Math.PI * 2); 
+        ctx.arc(675, 75, 30, 0, Math.PI * 2);  
+        ctx.arc(625, 75, 30, 0, Math.PI * 2);  
+        ctx.fill();
+
+        ctx.fillStyle = "green";
+        ctx.fillRect(0, 500, 800, 100); 
+
+        ctx.fillStyle = "black";
+        ctx.fillRect(150, 250, 300, 250); 
+
+        ctx.beginPath();
+        ctx.moveTo(150, 250); 
+        ctx.lineTo(300, 150); 
+        ctx.lineTo(450, 250); 
+        ctx.closePath();
+        ctx.fillStyle = "blue";
+        ctx.fill();
+
+        ctx.fillStyle = "brown";
+        ctx.fillRect(270, 400, 60, 100); 
+
+        ctx.fillStyle = "lightblue";
+        ctx.fillRect(180, 300, 60, 60); 
+        ctx.fillRect(360, 300, 60, 60); 
+
+        ctx.fillStyle = "saddlebrown";
+        ctx.fillRect(650, 400, 30, 90); 
+
+        ctx.beginPath();
+        ctx.arc(665, 350, 60, 0, Math.PI * 2); 
+        ctx.fillStyle = "green";
+        ctx.fill();
+
+    </script>
+</body>
+</html>
